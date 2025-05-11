@@ -1,6 +1,7 @@
 <script setup>
 import { RouterView } from 'vue-router'
 import { useHead } from '@vueuse/head'
+import { SpeedInsights } from '@vercel/speed-insights/vue';
 
 useHead({
   title: 'Your Name - Portfolio',
@@ -15,6 +16,7 @@ useHead({
 </script>
 
 <template>
+  <SpeedInsights />
   <RouterView v-slot="{ Component }">
     <KeepAlive include="Home">
       <component :is="Component" />

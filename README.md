@@ -1,5 +1,43 @@
-# Vue 3 + Vite
+# Modern Portfolio
+Modern Portfolio is a portfolio template built with Vue.js & Vite, designed to be Simple, Modern, and Fast.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Get Started 🚀
+To get started, follow these steps:
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/eikarna/modern-portfolio.git
+    cd modern-portfolio
+    ```
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+2.  Install the dependencies:
+    ```bash
+    npm install
+    ```
+
+3.  Run the development server:
+    ```bash
+    npm run dev
+    ```
+
+4.  Open your browser and go to `http://localhost:5173`.
+
+## Features
+- Fully Responsive
+- Simple, Modern, and Fast
+- Easy to Customize
+- Dark & Light Mode
+- Zero loading time
+- SEO Optimized
+
+## Technologies Used
+- Vue.js 3
+- Vite 4
+- Tailwind CSS 3
+- Vue Router 4
+- VueUse
+
+## License
+This project is licensed under the [Apache License 2.0](LICENSE).
+
+## Special Thanks
+- Deepseek R1
