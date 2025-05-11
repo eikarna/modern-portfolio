@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: 59 130 246;  /* #3B82F6 */
+  --color-primary-50: 239 246 255;
+  --color-primary-100: 219 234 254;
+  --color-secondary: 16 185 129; /* #10B981 */
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-[rgb(var(--color-primary))] to-[rgb(var(--color-secondary))] bg-clip-text text-transparent;
+  }
+
+  .bg-primary {
+    background-color: rgb(var(--color-primary));
+  }
+
+  .bg-secondary {
+    background-color: rgb(var(--color-secondary));
+  }
+  
+  .skill-card {
+    @apply p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow;
+  }
+
+  @media (max-width: 767px) {
+  .relative:not(:last-child)::after {
+    content: '';
+    @apply absolute left-0 top-8 bottom-0 w-1 bg-gray-200;
+  }
+  }
+
+  .contact-input {
+    @apply transition-all duration-200 ease-in-out;
+  }
+  
+  .submit-button {
+    @apply transform transition-transform duration-200 hover:scale-[1.02] active:scale-95;
+  }
+}
